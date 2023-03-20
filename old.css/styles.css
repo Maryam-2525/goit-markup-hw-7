@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Condensed:wght@300&family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
 
 :root{
     --main-text-color: #212121;
@@ -183,13 +183,13 @@ ul{
     background-position: center;
 }
 
-.hero-section{
+.hero{
     background-color: var(--dark-bg-color);
     padding: 200px 0;
 }
 
 
-.hero-title{
+.hero__title{
     font-weight: 900;
     font-size: 44px;
     line-height: calc(60/44);
@@ -201,7 +201,7 @@ ul{
     margin-bottom: 30px;
 }   
 
-.hero-btn{
+.hero__btn{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -222,8 +222,8 @@ ul{
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
 }
    
-.hero-btn:hover,
-.hero-btn:focus{
+.hero__btn:hover,
+.hero__btn:focus{
     background-color: darkblue;
     color: yellow;
 }
@@ -512,7 +512,16 @@ ul{
   
 }
 
-.portfolio-des{
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: var(--white-color);
+       
+}
+
+
+.cards__des{
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -524,7 +533,7 @@ ul{
     padding: 20px 24px;
 }
 
-.portfolio-text{
+.cards__text{
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -536,34 +545,31 @@ ul{
     padding: 0;
     margin-bottom: 24px;
 }
-.port-discription{
+.cards__discription{
     border-bottom:1px solid #eee ;
     border-left:1px solid #eee ;
     border-right:1px solid #eee;
 }
-
-
-
-.port-item:hover,
-.port-item:focus{
+.cards__list:hover,
+.cards__list:focus{
     box-shadow: 0px 1px 1px rgba(0,0,0,0.12),
      0px 4px 4px rgba(0, 0, 0, 0.06),
      1px 4px 6px rgba(0, 0, 0, 0.16);
    
 }
 
-.port-item:hover .port-overlay-item,
-.port-item:focus .port-overlay-item{
+.cards__list:hover .cards__ovarlay,
+.cards__list:focus .cards__ovarlay{
     cursor: pointer;
     transform: translateY(0);
 }
 
-.port-overlay{
+.cards__item{
     position: relative;
     overflow: hidden;
 }
 
-.port-overlay-item{
+.cards__ovarlay{
     font-family:"roboto";
     color: white;
     font-size:18px;
@@ -587,24 +593,17 @@ ul{
 }
 
 
-.port-disp-flex{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    background-color: var(--white-color);
-       
-}
 
-.port-item:nth-child(-n + 3){
+.cards__list:nth-child(-n + 3){
     margin-bottom: 30px;
 }
-.port-item:nth-last-child(-n + 3){
+.cards__list:nth-last-child(-n + 3){
     margin-top: 30px;
 }
 
 
 /* FOOTER */
- .footer-lnk-add{
+ .address__lnk{
     color: var(--white-color);
     font-style: normal;
     margin-bottom: 2px;
@@ -614,7 +613,7 @@ ul{
     vertical-align: top;
  }
 
-.footer-list-item:not(:last-child){
+.address__item:not(:last-child){
     margin-bottom: 2px;
 }
 
@@ -628,7 +627,7 @@ ul{
     padding-bottom: 60px;
 }
 
-.footer-lnk{
+.address__link{
    font-style: normal;
    font-size: 14px;
    line-height: calc(24/14);
@@ -636,7 +635,10 @@ ul{
    vertical-align: top;
    color:var(--footer-lnk-color);
 }
-.footer-social-icons-heading{
+.socialmedia{
+    margin-left: 70px;
+}
+.socialmedia__header{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -648,23 +650,12 @@ ul{
     margin-bottom: 20px;
 
 }
-
-
-
-.footer-social-margin{
-    margin-left: 10px;
-}
-.footer-social-icons{
-    display: flex;
-
-}
-.footer-social-list{
+.socialmedia__list{
     display: flex; 
     align-items: baseline;    
     justify-content: center;
 }
-
-.foot-circle-fill{
+.socialmedia__circle{
     background-color: #212121;
     border-radius: 50%;
     height: 44px; 
@@ -677,6 +668,18 @@ ul{
     transition-duration:250ms ;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
 }
+
+
+.footer-social-margin{
+    margin-left: 10px;
+}
+.footer-social-icons{
+    display: flex;
+
+}
+
+
+
 .footer__container{
     display: flex;
     align-items: baseline;
@@ -690,14 +693,12 @@ ul{
 .footer-social-item:not(:last-child){
     margin-right: 10px;
 }
-.footer-middle-part{
-    margin-left: 70px;
-}
-.footer-last-part{
+
+.form{
     margin-left:70px ;
   
 }
-.footer-sub{
+.form__header{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -710,16 +711,16 @@ ul{
     text-transform: uppercase;
 
 }
-.footer-input{
+.form__input{
     background-color: var(--dark-bg-color);
        
 }
-.footer-form{
+.form__item{
     display: flex;
     width: 100%;   
 }
 
-.footer-input{
+.form__input{
     font-family: "roboto";
     width: 358px;
     font-size: 16px;
@@ -733,13 +734,13 @@ ul{
     margin-right: 12px;
 }
 
-.footer-input:hover,
-.footer-input:focus{
+.form__input:hover,
+.form__input:focus{
     outline: none;
     border-color: #2196F3;
 }
 
-.footer-input::placeholder{
+.form__input::placeholder{
     font-family: "roboto";
     font-size: 16px;
     line-height: calc(20/16);
@@ -853,14 +854,14 @@ ul{
         opacity: 1;
     }   
 }
- .modal-form{ 
+ .modal__form{ 
     width: 448px;
     margin-left: 40px;
     margin-right: 40px;
    
 }
  
-.modal-title{  
+.modal__title{  
     margin:40px 40px;
     font-family: "roboto";
     font-weight: 700;
@@ -869,10 +870,10 @@ ul{
     letter-spacing: 0.03em;
     margin-bottom: 12px;
 }
-.modal-label{
+.modal__label{
     margin-bottom: 10px;
 }
-.modal-label-name{
+.modal__name{
     font-family: "roboto";
     font-weight: 400;
     font-size: 12px;
@@ -883,12 +884,12 @@ ul{
     margin-bottom: 4px;
 }
 
-.input-cont{
+.modal__cont{
     display: block;
     position: relative;
 }
 
-.input{
+.modal__input{
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     height: 40px;
@@ -899,14 +900,14 @@ ul{
     font-family: "roboto";
 }
 
-.input:hover,
-.input:focus{
+.modal__input:hover,
+.modal__input:focus{
     border-color: #2196f3;
     outline: none;
 }
 
-.input:hover + .modal-svg,
-.input:focus + .modal-svg{
+.modal__input:hover + .modal-svg,
+.modal__input:focus + .modal-svg{
     fill: #2196F3;
 }
 
@@ -917,7 +918,7 @@ ul{
     left: 14px;
     fill: #212121;
 }
- .modal-textarea{
+ .modal__textarea{
     width: 100%;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -926,7 +927,7 @@ ul{
     resize: none;
     margin-bottom: 20px;
 }
-.modal-textarea::placeholder{
+.modal__textarea::placeholder{
     font-family: "roboto";
     font-size: 12px;
     font-weight: 400;
@@ -936,7 +937,7 @@ ul{
 
 
 
-.modal-textarea:focus{
+.modal__textarea:focus{
     border-color:#2196F3;
     outline: none;
 }
@@ -989,7 +990,7 @@ ul{
     align-items: center;
     justify-content: center;
     transform: translatex(60%); 
- } 
+} 
 
  .form-bttn:hover,
  .form-bttn:focus{

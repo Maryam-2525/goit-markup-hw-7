@@ -172,7 +172,7 @@ ul{
 
 
 /* HERO */
-.hero-bg{
+.hero--bg{
     background-image: linear-gradient(
         rgba(47,48,58, 0.4 ),
         rgba(47,48,58, 0.4)
@@ -231,7 +231,7 @@ ul{
 .what-we-do{
     padding-top: 0;
 }
-.what-we-do-tittle{
+.what-we-do__tittle{
     text-align: center;
     font-style: normal;
     font-weight: 700;
@@ -241,16 +241,16 @@ ul{
     color: var(--main-text-color);
     margin-bottom: 50px;
 }
- .what-we-do-items{
+ .what-we-do__items{
     display: flex;
  }
 
-.what-we-do-item{
+.what-we-do__item{
     display: flex; 
     position: relative; 
 }
 
-.what-we-do-overlay{
+.what-we-do__overlay{
     background-color: rgba(0, 0, 0, .5);
     color: white;
     font-family: "roboto";
@@ -267,7 +267,7 @@ ul{
     padding: 27px 132px;
 }
 
-.what-we-do-item:not(:last-child){
+.what-we-do__item:not(:last-child){
     margin-right: 30px;
 }
 
@@ -313,10 +313,10 @@ ul{
 
   
 
-.skills-list{
+.skills{
     display: flex;
 }
-.skills-sec-tittle{
+.skills__tittle{
     font-weight: 700;
     font-size: 14px;
     line-height: calc(16/14);
@@ -325,7 +325,7 @@ ul{
     margin-bottom:9px ;
 }
 
-.skills-sec-text{
+.skills__text{
     font-weight: 400;
     font-size: 14px;
     line-height: calc(24/14);
@@ -333,10 +333,10 @@ ul{
     color: var(--secondary-text-color);
 }
 
-.skills-list-item{
+.skills__item{
     width: 270px;
 }
-.skills-list-item:not(:last-child){
+.skills__item:not(:last-child){
     margin-right: 30px;
 }
 
@@ -352,22 +352,22 @@ ul{
     color: var(--main-text-color);
     margin-bottom: 50px;
 }
-.team-section{
+.team--bg{
     background-color: #F5F4FA;
 }
 .team{
     display: flex;
 }
-.team-item{
+.team__item{
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12);
     border-radius: 0px 0px 4px 4px;
     background-color: var(--white-color);
     
 }
-.team-item:not(:last-child){
+.team__item:not(:last-child){
     margin-right: 30px;
 }
-.team-des{
+.team__des{
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -379,7 +379,7 @@ ul{
     margin-bottom: 10px;
     
 }
-.team-text{ 
+.team__text{ 
     font-weight: 400;
     font-size: 16px;
     line-height: calc(19/16);
@@ -389,7 +389,7 @@ ul{
     text-align: center;
 }
 
-.circle-fill{
+.team__circle{
     background-color: white;
     color: #AFB1B8;
     border-radius: 50%;
@@ -403,7 +403,7 @@ ul{
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 
-.circle-fill:hover{
+.team__circle:hover{
     background-color: #2196F3;
     color: #ffffff;
 }
@@ -413,17 +413,17 @@ ul{
 }
 
 
-.team-smedia-icons{
+.team__icons{
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
 }
-.team-social-item:not(:last-child){
+.team__social:not(:last-child){
     margin-right: 10px;
 }
 
 /* REGULAR COSTOMERS */
-.rgular-cust-heading{
+.regular-cust-heading{
     text-align: center;
     font-style: normal;
     font-weight: 700;
@@ -434,11 +434,11 @@ ul{
     margin-bottom: 50px;  
 }
 
-.rgular-custmers{
+.regular{
     display: flex;
 }
 
-.rgular-cust-rect-shape{
+.regular__rectangle{
     display: flex;
     width: 170px;
     height: 92px;
@@ -453,16 +453,16 @@ ul{
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
 }
  
-.rgular-cust-rect-shape:hover,
-.rgular-cust-rect-shape:focus{
+.regular__rectangle:hover,
+.regular__rectangle:focus{
    border-color: #2196F3;
    color: #2196f3;
 } 
 
-.rgular-cust-list-item{
+.regular__item{
     margin-right: 30px;
 }
-.rgular-cust-svg{
+.regular-cust-svg{
     fill:currentColor;
 }
 
@@ -677,7 +677,7 @@ ul{
     transition-duration:250ms ;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
 }
-.footer-container{
+.footer__container{
     display: flex;
     align-items: baseline;
 }

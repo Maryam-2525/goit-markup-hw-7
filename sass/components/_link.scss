@@ -3,7 +3,7 @@
     font-size: 14px;
     line-height: calc(16/14);
     letter-spacing: 0.02em;
-    color: var(--main-text-color);
+    color: $main-text-color;
     padding-top: 32px;
     padding-bottom: 32px;
     display: block;
@@ -15,10 +15,10 @@
 
 .nav__lnk:focus,
 .nav__lnk:hover{
-    color: var(--other-color);
+    color: $other-color;
 }
 .nav__lnk--active{
-    color: var(--other-color);
+    color: $other-color;
 }
 
 .contact__header-lnk{
@@ -26,7 +26,7 @@
     font-size: 14px;
     line-height: calc(16/14);
     letter-spacing: 0.02em;
-    color: var(--secondary-text-color);
+    color: $secondary-text-color;
     padding-top: 32px;
     padding-bottom: 32px;
     display: block;
@@ -56,7 +56,7 @@
 
 
 .address__lnk{
-    color: var(--white-color);
+    color: $white-color;
     font-style: normal;
     margin-bottom: 2px;
     font-size: 14px;
@@ -71,7 +71,7 @@
     line-height: calc(24/14);
     letter-spacing: 0.03em;
     vertical-align: top;
-    color:var(--footer-lnk-color);
+    color:$footer-lnk-color;
  }
 
  .regular__rectangle{
@@ -107,3 +107,4 @@
     transition-duration:250ms ;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
 }
+

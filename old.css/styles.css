@@ -784,6 +784,7 @@ ul{
     
 }
 
+
 .modal{
     position: absolute;
     width: 521px;
@@ -801,12 +802,12 @@ ul{
 }
 
 .modal-bg{
-    position: fixed;
+    position:fixed; ;
+    top:0;
+    left:0; 
     background-color:rgba(0, 0, 0, 0.2);
     width: 100vw;
-    height: 100vh;
-    top:0;
-    left:0;  
+    height: 100vh
 }
 
 .modal-bttn-close{

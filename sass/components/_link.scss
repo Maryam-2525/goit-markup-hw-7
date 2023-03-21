@@ -20,6 +20,17 @@
 .nav__lnk--active{
     color: $other-color;
 }
+.nav__lnk--active::after{
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color:var(--other-color) ;
+    border-radius: 2px;
+
+    transform: translateY(800%);
+
+}
 
 .contact__header-lnk{
     font-weight: 500;
@@ -35,6 +46,7 @@
     transition-duration:250ms ;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
 }
+
 .team__circle{
     background-color: white;
     color: #AFB1B8;
@@ -106,5 +118,8 @@
     transition-property:background-color;
     transition-duration:250ms ;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
+}
+.socialmedia__circle:hover{
+    background-color: #2196F3;
 }
 

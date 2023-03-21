@@ -2,6 +2,22 @@
     visibility: hidden;
     
 }
+@keyframes modal-animation {
+    0%{
+        scale: 0;
+        opacity: 0;
+    }
+
+    50%{
+        scale: .5;
+        opacity: .5;
+    }
+
+    100%{
+        scale: 1;
+        opacity: 1;
+    }   
+}
 .modal{
     position: absolute;
     width: 521px;

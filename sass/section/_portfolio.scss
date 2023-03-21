@@ -29,26 +29,10 @@
     padding: 20px 24px;
 }
 
-.cards{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    background-color: $white-color;
-       
-}
 
 
-.cards__des{
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: calc(36/18);  
-    letter-spacing: 0.06em;
-    color: $main-text-color; 
-    text-align: left;
-    padding: 0;
-    padding: 20px 24px;
-}
+
+
 
 .cards__text{
     font-style: normal;

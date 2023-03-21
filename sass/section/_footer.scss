@@ -31,6 +31,12 @@
     align-items: baseline;    
     justify-content: center;
 }
+.socialmedia__item:not(:last-child){
+    margin-right: 10px;
+}
+.foot-svg-fill{
+    fill: currentColor;
+}
 .footer-social-margin{
     margin-left: 10px;
 }

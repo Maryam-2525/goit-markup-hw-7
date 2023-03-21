@@ -48,7 +48,6 @@
 
 }
 
-
 .form-bttn{ 
     font-family: "roboto";
     font-weight: 700;
@@ -109,11 +108,11 @@
     line-height: calc(26/16);
     text-align: center;
     letter-spacing: 0.06em;
-    color: var(--main-text-color);
+    color: $main-text-color;
     cursor: pointer;
     border: none;
     border-radius:0px 0px 4px 4px ;
-    background-color: var(--btn-bg-color);
+    background-color: $btn-bg-color;
     padding-left:27px;
     padding-right: 27px;
     padding-top: 6px;
@@ -124,8 +123,8 @@
 }
 .portfolio-btn-item:hover,
 .portfolio-btn-item:focus{
-    background-color: var(--other-color);
-    color: var(--white-color);
+    background-color: $other-color;
+    color: $white-color;
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
     0px 4px 4px 0px rgba(0, 0, 0, 0.06),
     0px 1px 1px 0px rgba(0, 0, 0, 0.12);

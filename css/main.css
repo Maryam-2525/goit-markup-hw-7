@@ -148,11 +148,11 @@ ul {
   line-height: 1.625;
   text-align: center;
   letter-spacing: 0.06em;
-  color: var(--main-text-color);
+  color: #212121;
   cursor: pointer;
   border: none;
   border-radius: 0px 0px 4px 4px;
-  background-color: var(--btn-bg-color);
+  background-color: #f5f4fa;
   padding-left: 27px;
   padding-right: 27px;
   padding-top: 6px;
@@ -164,8 +164,8 @@ ul {
 
 .portfolio-btn-item:hover,
 .portfolio-btn-item:focus {
-  background-color: var(--other-color);
-  color: var(--white-color);
+  background-color: #2196f3;
+  color: #ffffff;
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
@@ -198,7 +198,7 @@ ul {
   display: block;
   width: 100%;
   height: 4px;
-  background-color: var(--other-color);
+  background-color: #2196f3;
   border-radius: 2px;
   transform: translateY(800%);
 }
@@ -216,6 +216,11 @@ ul {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact__header-lnk:hover,
+.contact__header-lnk:focus {
+  color: #2196f3;
 }
 
 .team__circle {
@@ -311,6 +316,20 @@ ul {
   visibility: hidden;
 }
 
+@keyframes modal-animation {
+  0% {
+    scale: 0;
+    opacity: 0;
+  }
+  50% {
+    scale: 0.5;
+    opacity: 0.5;
+  }
+  100% {
+    scale: 1;
+    opacity: 1;
+  }
+}
 .modal {
   position: absolute;
   width: 521px;
@@ -763,25 +782,6 @@ ul {
   padding: 20px 24px;
 }
 
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  background-color: #ffffff;
-}
-
-.cards__des {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: #212121;
-  text-align: left;
-  padding: 0;
-  padding: 20px 24px;
-}
-
 .cards__text {
   font-style: normal;
   font-weight: 400;
@@ -880,6 +880,14 @@ ul {
   display: flex;
   align-items: baseline;
   justify-content: center;
+}
+
+.socialmedia__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.foot-svg-fill {
+  fill: currentColor;
 }
 
 .footer-social-margin {

@@ -690,7 +690,7 @@ ul{
 .foot-svg-fill{
     fill: currentColor;
 }
-.footer-social-item:not(:last-child){
+.socialmedia__item:not(:last-child){
     margin-right: 10px;
 }
 
